@@ -1366,9 +1366,9 @@ resource "aws_default_route_table" "default" {
 }
 resource "aws_instance" "ourfirst" {
   ami           = "ami-0447a12f28fddb066"
-  instance_type = "t2.small"
-#  tags = {
-#    Name = "sentinel-server"
-#  }
+  instance_type = "t2.micro"
+tags = {
+    Name = "sentinel-server"
+  }
   
 }
